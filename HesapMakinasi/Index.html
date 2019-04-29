@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html ng-app="hesapApp">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Hesap/hesap-app.js"></script>
+</head>
+<body ng-controller="hesapController" ng-init="Tarih()">
+    <p>{{tarih}}</p>
+    <input type="text" ng-model="a" placeholder="Birinci Sayı" />
+    <input type="text" ng-model="b" placeholder="İkinci Sayı" />
+    <br />
+    <input type="button" value="Topla" ng-click="Topla(a,b)" />
+    <input type="button" value="Çıkar" ng-click="Cikar(a,b)" />
+    <input type="button" value="Çarp" ng-click="Carp(a,b)" />
+    <input type="button" value="Böl" ng-click="Bol(a,b)" />
+    <br />
+    <label>Sonuc={{sonuc}}</label>
+
+</body>
+</html>
